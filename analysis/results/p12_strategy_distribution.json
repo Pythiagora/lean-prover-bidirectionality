@@ -1,0 +1,998 @@
+{
+ "goedel": {
+  "counter": {
+   "S1_named_decomp": 33,
+   "S2_single_sq_nonneg": 19,
+   "S5_other": 3,
+   "S3_shotgun_nlinarith": 1
+  },
+  "n_pass": 56,
+  "mean_bidirec": 0.8415094339622642
+ },
+ "kimina": {
+  "counter": {
+   "S3_shotgun_nlinarith": 54,
+   "S5_other": 5,
+   "S1_named_decomp": 3,
+   "S4_positivity": 1
+  },
+  "n_pass": 63,
+  "mean_bidirec": 0.23793103448275862
+ },
+ "bidirec_grade": {
+  "S1_named_decomp": 1.0,
+  "S2_single_sq_nonneg": 0.6,
+  "S2b_two_candidates": 0.4,
+  "S3_shotgun_nlinarith": 0.2,
+  "S4_positivity": 0.0,
+  "S4_polyrith": 0.0,
+  "S5_other": null
+ },
+ "details_kimina": {
+  "S3_shotgun_nlinarith": [
+   {
+    "attempt": 0,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 1,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "y",
+     "x + y",
+     "x - 2 * y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 2,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 3,
+    "nlinarith_candidates": [
+     "x - 2 * y",
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "x / 2 + y",
+     "y - x / 2"
+    ],
+    "n_candidates": 6,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 4,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "x + 2 * y",
+     "2 * y - x"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 5,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 6,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 7,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 8,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 10,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "y - x / 2",
+     "x + 2 * y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 13,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 14,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - 2 * y",
+     "y",
+     "x + 2 * y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 15,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x + 2 * y",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 16,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "y + x / 2",
+     "y - x / 2"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 17,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 18,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 19,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 20,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 21,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 22,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 23,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y - x / 2",
+     "x + 2 * y",
+     "x - 2 * y",
+     "y + x / 2"
+    ],
+    "n_candidates": 7,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 24,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 25,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 26,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 27,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 28,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 29,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + 2 * y",
+     "x - 2 * y",
+     "x + y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 31,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 33,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x + y",
+     "x - y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 34,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 36,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 37,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 38,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + 2 * y",
+     "2 * y - x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 39,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 40,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 41,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 42,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 44,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 45,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 46,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 47,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 48,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 49,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "y - x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 50,
+    "nlinarith_candidates": [
+     "x - 2 * y",
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 51,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "y",
+     "x + y"
+    ],
+    "n_candidates": 4,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 53,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 55,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 57,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 58,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y"
+    ],
+    "n_candidates": 3,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 59,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 60,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "x + y",
+     "y",
+     "x"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 61,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "y - x / 2",
+     "x + y",
+     "x - y",
+     "x + 2 * y",
+     "2 * y - x"
+    ],
+    "n_candidates": 6,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 62,
+    "nlinarith_candidates": [
+     "y + x / 2",
+     "x - y",
+     "x + y",
+     "x",
+     "y"
+    ],
+    "n_candidates": 5,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 63,
+    "nlinarith_candidates": [
+     "x / 2 + y",
+     "x - y",
+     "x + y",
+     "y - x / 2",
+     "x + 2 * y",
+     "2 * y - x"
+    ],
+    "n_candidates": 6,
+    "has_corrige_square": true
+   }
+  ],
+  "S5_other": [
+   {
+    "attempt": 9
+   },
+   {
+    "attempt": 11
+   },
+   {
+    "attempt": 30
+   },
+   {
+    "attempt": 35
+   },
+   {
+    "attempt": 52
+   }
+  ],
+  "S1_named_decomp": [
+   {
+    "attempt": 12,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 32,
+    "named_have": "have h : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 43,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   }
+  ],
+  "S4_positivity": [
+   {
+    "attempt": 56
+   }
+  ]
+ },
+ "details_goedel": {
+  "S1_named_decomp": [
+   {
+    "attempt": 1,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 3,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 6,
+    "named_have": "have h\u2082 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 7,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 8,
+    "named_have": "have h_main : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 10,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 13,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 15,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 16,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 17,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 18,
+    "named_have": "have h\u2081 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 19,
+    "named_have": "have h_main : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 22,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 23,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 25,
+    "named_have": "have h2 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 26,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 27,
+    "named_have": "have h\u2081 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 28,
+    "named_have": "have h\u2082 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 29,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 32,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 33,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 35,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 40,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 42,
+    "named_have": "have h_main : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 44,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 45,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (x / 2 + y) ^ 2"
+   },
+   {
+    "attempt": 51,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 53,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 58,
+    "named_have": "have h_main : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 60,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 61,
+    "named_have": "have h\u2081 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 62,
+    "named_have": "have h1 : (1 / 4 : \u211d) * x ^ 2 + x * y + y ^ 2 = (y + x / 2) ^ 2"
+   },
+   {
+    "attempt": 63,
+    "named_have": "have h1 : x ^ 2 + x * y + y ^ 2 - (3 / 4 : \u211d) * x ^ 2 = (y + x / 2) ^ 2"
+   }
+  ],
+  "S2_single_sq_nonneg": [
+   {
+    "attempt": 2,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 4,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 9,
+    "nlinarith_candidates": [
+     "y + (1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 11,
+    "nlinarith_candidates": [
+     "y + (1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 12,
+    "nlinarith_candidates": [
+     "y + (1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 14,
+    "nlinarith_candidates": [
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 20,
+    "nlinarith_candidates": [
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 21,
+    "nlinarith_candidates": [
+     "y + (1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 30,
+    "nlinarith_candidates": [
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 36,
+    "nlinarith_candidates": [
+     "x / 2 + y"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 37,
+    "nlinarith_candidates": [
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 38,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 39,
+    "nlinarith_candidates": [
+     "x + 2 * y"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 41,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 46,
+    "nlinarith_candidates": [
+     "y + (1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 48,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 49,
+    "nlinarith_candidates": [
+     "(1 / 2 : \u211d"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": false
+   },
+   {
+    "attempt": 55,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   },
+   {
+    "attempt": 57,
+    "nlinarith_candidates": [
+     "y + x / 2"
+    ],
+    "n_candidates": 1,
+    "has_corrige_square": true
+   }
+  ],
+  "S5_other": [
+   {
+    "attempt": 24
+   },
+   {
+    "attempt": 34
+   },
+   {
+    "attempt": 50
+   }
+  ],
+  "S3_shotgun_nlinarith": [
+   {
+    "attempt": 52,
+    "nlinarith_candidates": [
+     "x + 2 * y",
+     "x - 2 * y",
+     "x + y",
+     "x - y",
+     "2 * x + y",
+     "2 * x - y",
+     "x / 2 + y",
+     "x / 2 - y"
+    ],
+    "n_candidates": 8,
+    "has_corrige_square": true
+   }
+  ]
+ }
+}

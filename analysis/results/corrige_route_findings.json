@@ -1,0 +1,176 @@
+{
+ "rows": [
+  {
+   "tid": "P3.subq_P3_I_1_a",
+   "corrige_route": "double-angle identities",
+   "corrige_chars": 220,
+   "goedel": {
+    "n_pass": 12,
+    "mean_chars": 7311.0,
+    "expansion_ratio": 33.2,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 12
+   },
+   "kimina": {
+    "n_pass": 6,
+    "mean_chars": 8675.0,
+    "expansion_ratio": 39.4,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 6
+   }
+  },
+  {
+   "tid": "P11.subq_II_3_a",
+   "corrige_route": "chain rule on (\u03bb-s)\u207b\u00b9 + sin\u00b2 \u2265 0",
+   "corrige_chars": 130,
+   "goedel": {
+    "n_pass": 51,
+    "mean_chars": 2079.0,
+    "expansion_ratio": 16.0,
+    "route_preservation_rate": 0.0,
+    "n_route_preserved": 0
+   },
+   "kimina": null
+  },
+  {
+   "tid": "P11.subq_III_1",
+   "corrige_route": "MVT + Cauchy criterion",
+   "corrige_chars": 200,
+   "goedel": null,
+   "kimina": null
+  },
+  {
+   "tid": "P11.subq_IV_2_a",
+   "corrige_route": "chain rule + f-periodicity",
+   "corrige_chars": 60,
+   "goedel": {
+    "n_pass": 35,
+    "mean_chars": 1737.0,
+    "expansion_ratio": 29.0,
+    "route_preservation_rate": 0.91,
+    "n_route_preserved": 32
+   },
+   "kimina": {
+    "n_pass": 5,
+    "mean_chars": 903.0,
+    "expansion_ratio": 15.0,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 5
+   }
+  },
+  {
+   "tid": "P12.subq_I_B_2_a",
+   "corrige_route": "completing the square (y+x/2)\u00b2",
+   "corrige_chars": 80,
+   "goedel": {
+    "n_pass": 56,
+    "mean_chars": 830.0,
+    "expansion_ratio": 10.4,
+    "route_preservation_rate": 0.75,
+    "n_route_preserved": 42
+   },
+   "kimina": {
+    "n_pass": 63,
+    "mean_chars": 213.0,
+    "expansion_ratio": 2.7,
+    "route_preservation_rate": 0.06,
+    "n_route_preserved": 4
+   }
+  },
+  {
+   "tid": "P13.subq_I_1",
+   "corrige_route": "continuity + monotonicity + IVT",
+   "corrige_chars": 260,
+   "goedel": {
+    "n_pass": 3,
+    "mean_chars": 7119.0,
+    "expansion_ratio": 27.4,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 3
+   },
+   "kimina": {
+    "n_pass": 2,
+    "mean_chars": 5690.0,
+    "expansion_ratio": 21.9,
+    "route_preservation_rate": 0.5,
+    "n_route_preserved": 1
+   }
+  },
+  {
+   "tid": "P15.subq_I_2",
+   "corrige_route": "free family of (\u0394e_k) by degree drop",
+   "corrige_chars": 400,
+   "goedel": {
+    "n_pass": 4,
+    "mean_chars": 8077.0,
+    "expansion_ratio": 20.2,
+    "route_preservation_rate": 0.0,
+    "n_route_preserved": 0
+   },
+   "kimina": {
+    "n_pass": 4,
+    "mean_chars": 5149.0,
+    "expansion_ratio": 12.9,
+    "route_preservation_rate": 0.0,
+    "n_route_preserved": 0
+   }
+  },
+  {
+   "tid": "P7.subq_A_2_a",
+   "corrige_route": "block-matrix factoring of L",
+   "corrige_chars": 150,
+   "goedel": {
+    "n_pass": 54,
+    "mean_chars": 1453.0,
+    "expansion_ratio": 9.7,
+    "route_preservation_rate": 0.41,
+    "n_route_preserved": 22
+   },
+   "kimina": {
+    "n_pass": 2,
+    "mean_chars": 1113.0,
+    "expansion_ratio": 7.4,
+    "route_preservation_rate": 0.5,
+    "n_route_preserved": 1
+   }
+  },
+  {
+   "tid": "P9.subq_4",
+   "corrige_route": "ContinuousAt.div composition",
+   "corrige_chars": 120,
+   "goedel": {
+    "n_pass": 59,
+    "mean_chars": 2337.0,
+    "expansion_ratio": 19.5,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 59
+   },
+   "kimina": {
+    "n_pass": 28,
+    "mean_chars": 1018.0,
+    "expansion_ratio": 8.5,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 28
+   }
+  },
+  {
+   "tid": "P6.subq_I_3_a_recurrent",
+   "corrige_route": "characteristic polynomial x\u00b2-5x+6 \u2192 coeffs (1,-5,6)",
+   "corrige_chars": 140,
+   "goedel": {
+    "n_pass": 53,
+    "mean_chars": 1683.0,
+    "expansion_ratio": 12.0,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 53
+   },
+   "kimina": {
+    "n_pass": 62,
+    "mean_chars": 508.0,
+    "expansion_ratio": 3.6,
+    "route_preservation_rate": 1.0,
+    "n_route_preserved": 62
+   }
+  }
+ ]
+}

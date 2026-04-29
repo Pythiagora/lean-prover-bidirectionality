@@ -1,0 +1,405 @@
+{
+ "rows": [
+  {
+   "tid": "P3.subq_P3_I_1_a",
+   "level": "concrete",
+   "corrige_route": "double-angle identities cos_two_mul, sin_two_mul",
+   "route_pattern": [
+    "\\bcos_two_mul\\b",
+    "\\bsin_two_mul\\b",
+    "\\btan_eq_sin_div_cos\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 12,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 6,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P4.subq_P4_III_1",
+   "level": "abstract",
+   "corrige_route": "define d(X) := AX - XA, verify Leibniz law structurally",
+   "route_pattern": [
+    "\\bderivation\\b",
+    "\\bLieDerivation\\b",
+    "\\bLinearMap\\.mk\\b"
+   ],
+   "lower_level_pattern": [
+    "\\bA\\s*\\*\\s*X\\s*-\\s*X\\s*\\*\\s*A"
+   ],
+   "goedel": {
+    "n_pass": 4,
+    "route_rate": 0.25,
+    "lower_rate": 1.0
+   },
+   "kimina": {
+    "n_pass": 4,
+    "route_rate": 0.0,
+    "lower_rate": 1.0
+   }
+  },
+  {
+   "tid": "P6.subq_I_3_a_recurrent",
+   "level": "concrete",
+   "corrige_route": "compute characteristic polynomial roots \u2192 coefficients (1,-5,6)",
+   "route_pattern": [
+    "\\(2\\s*:\\s*\u211d\\)\\s*\\^.*\\(3\\s*:\\s*\u211d\\)\\s*\\^"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 53,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 62,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P7.subq_A_2_a",
+   "level": "abstract",
+   "corrige_route": "block-matrix algebra: factor -1/(n-1) from L",
+   "route_pattern": [
+    "\\bMatrix\\.smul\\b.*-1\\s*/\\s*\\(?n\\s*-\\s*1"
+   ],
+   "lower_level_pattern": [
+    "\\bext\\s+i\\s+j\\b.*\\bby_cases\\b|\\bfunext\\s+i\\s+j\\b.*\\bby_cases\\b"
+   ],
+   "goedel": {
+    "n_pass": 54,
+    "route_rate": 0.0,
+    "lower_rate": 0.98
+   },
+   "kimina": {
+    "n_pass": 2,
+    "route_rate": 0.0,
+    "lower_rate": 0.5
+   }
+  },
+  {
+   "tid": "P8.subq_A_1_a",
+   "level": "standard",
+   "corrige_route": "det invertible in \u2124 \u21d2 det is unit \u21d2 \u00b11 (Int.isUnit_iff)",
+   "route_pattern": [
+    "\\bInt\\.isUnit_iff\\b",
+    "\\bisUnit_int_iff\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 12,
+    "route_rate": 0.42,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 2,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P9.subq_4",
+   "level": "standard",
+   "corrige_route": "ContinuousAt.div composition",
+   "route_pattern": [
+    "\\bContinuousAt\\.div\\b|\\bContinuous\\.div\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 59,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 28,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P9.subq_22",
+   "level": "abstract",
+   "corrige_route": "unique factorization in \u2124[i\u221a2] yields cube representation",
+   "route_pattern": [
+    "\\bUniqueFactorizationMonoid\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": null,
+   "kimina": {
+    "n_pass": 1,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P10.subq_II_B_1",
+   "level": "concrete",
+   "corrige_route": "geometric decay |z_n - 1| = |z_0 - 1|/2^n",
+   "route_pattern": [
+    "\\btendsto_pow_atTop_nhds_zero\\b|\\b1\\s*/\\s*2\\s*\\^"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 2,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   },
+   "kimina": null
+  },
+  {
+   "tid": "P10.subq_III_A_3_c",
+   "level": "concrete",
+   "corrige_route": "Finset.sum_range_succ rewriting",
+   "route_pattern": [
+    "\\bFinset\\.sum_range_succ\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 4,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 1,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P11.subq_I_3_b",
+   "level": "standard",
+   "corrige_route": "continuity of \u03b8 from polar decomposition + Real.arctan",
+   "route_pattern": [
+    "\\bReal\\.arctan\\b|\\bReal\\.tan_arctan\\b|\\bReal\\.atan2\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 55,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 59,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P11.subq_II_3_a",
+   "level": "standard",
+   "corrige_route": "chain rule on (\u03bb-s)\u207b\u00b9 via HasDerivAt.div + sin\u00b2 \u2265 0",
+   "route_pattern": [
+    "\\bapply\\s+HasDerivAt\\.div\\b|\\bHasDerivAt\\.inv\\b"
+   ],
+   "lower_level_pattern": [
+    "\\bconvert\\s+HasDerivAt\\.div\\b"
+   ],
+   "goedel": {
+    "n_pass": 51,
+    "route_rate": 0.0,
+    "lower_rate": 0.73
+   },
+   "kimina": null
+  },
+  {
+   "tid": "P11.subq_III_1",
+   "level": "abstract",
+   "corrige_route": "MVT + Cauchy criterion (completeness of \u211d)",
+   "route_pattern": [
+    "\\bcauchySeq\\b|\\bMetric\\.cauchySeq_iff\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": null,
+   "kimina": null
+  },
+  {
+   "tid": "P11.subq_III_5_a",
+   "level": "standard",
+   "corrige_route": "Function.Periodic + Cauchy-Lipschitz",
+   "route_pattern": [
+    "\\bFunction\\.Periodic\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 7,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   },
+   "kimina": null
+  },
+  {
+   "tid": "P11.subq_IV_2_a",
+   "level": "standard",
+   "corrige_route": "HasDerivAt.comp (chain rule) + f-periodicity",
+   "route_pattern": [
+    "\\bHasDerivAt\\.comp\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 35,
+    "route_rate": 0.91,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 5,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P12.subq_I_B_2_a",
+   "level": "concrete",
+   "corrige_route": "complete the square (y + x/2)\u00b2",
+   "route_pattern": [
+    "\\(y\\s*\\+\\s*x\\s*/\\s*2\\)\\s*\\^\\s*2",
+    "\\(x\\s*/\\s*2\\s*\\+\\s*y\\)\\s*\\^\\s*2"
+   ],
+   "lower_level_pattern": [
+    "nlinarith\\s*\\[\\s*sq_nonneg[^\\]]*sq_nonneg[^\\]]*sq_nonneg"
+   ],
+   "goedel": {
+    "n_pass": 56,
+    "route_rate": 0.75,
+    "lower_rate": 0.02
+   },
+   "kimina": {
+    "n_pass": 63,
+    "route_rate": 0.06,
+    "lower_rate": 0.86
+   }
+  },
+  {
+   "tid": "P13.subq_I_1",
+   "level": "standard",
+   "corrige_route": "continuity + monotonicity + IVT",
+   "route_pattern": [
+    "\\bintermediate_value_\\w+|\\bContinuous\\.exists_eq_of_le_of_le\\b|\\bIntermediateValue\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 3,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 2,
+    "route_rate": 0.5,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P15.subq_I_2",
+   "level": "abstract",
+   "corrige_route": "free family of (\u0394e_k) by degree drop \u21d2 ker(\u0394) = constants",
+   "route_pattern": [
+    "\\bLinearIndependent\\b|\\bisLinearIndependent\\b"
+   ],
+   "lower_level_pattern": [
+    "\\bnatDegree\\b",
+    "\\beval\\s+\\(\u2191\\(?\\s*n\\b"
+   ],
+   "goedel": {
+    "n_pass": 4,
+    "route_rate": 0.0,
+    "lower_rate": 0.5
+   },
+   "kimina": {
+    "n_pass": 4,
+    "route_rate": 0.0,
+    "lower_rate": 0.5
+   }
+  },
+  {
+   "tid": "P16.subq_IV_3",
+   "level": "standard",
+   "corrige_route": "MVT bound for Lipschitz constant",
+   "route_pattern": [
+    "\\bexists_deriv_in\\b|\\bMVT\\b|\\bMeanValueTheorem\\b"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 26,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 16,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P17.subq_II_2",
+   "level": "concrete",
+   "corrige_route": "induction on sequence index",
+   "route_pattern": [
+    "\\binduction\\s+\\w+\\s+with"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 35,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 23,
+    "route_rate": 0.0,
+    "lower_rate": 0.0
+   }
+  },
+  {
+   "tid": "P17.subq_II_4_a",
+   "level": "concrete",
+   "corrige_route": "induction on sequence index + bound",
+   "route_pattern": [
+    "\\binduction\\s+\\w+\\s+with"
+   ],
+   "lower_level_pattern": [],
+   "goedel": {
+    "n_pass": 48,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   },
+   "kimina": {
+    "n_pass": 7,
+    "route_rate": 1.0,
+    "lower_rate": 0.0
+   }
+  }
+ ],
+ "by_level": {
+  "concrete": [
+   "P3.subq_P3_I_1_a",
+   "P6.subq_I_3_a_recurrent",
+   "P10.subq_II_B_1",
+   "P10.subq_III_A_3_c",
+   "P12.subq_I_B_2_a",
+   "P17.subq_II_2",
+   "P17.subq_II_4_a"
+  ],
+  "abstract": [
+   "P4.subq_P4_III_1",
+   "P7.subq_A_2_a",
+   "P9.subq_22",
+   "P11.subq_III_1",
+   "P15.subq_I_2"
+  ],
+  "standard": [
+   "P8.subq_A_1_a",
+   "P9.subq_4",
+   "P11.subq_I_3_b",
+   "P11.subq_II_3_a",
+   "P11.subq_III_5_a",
+   "P11.subq_IV_2_a",
+   "P13.subq_I_1",
+   "P16.subq_IV_3"
+  ]
+ }
+}

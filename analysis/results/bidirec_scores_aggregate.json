@@ -1,0 +1,430 @@
+{
+ "P10.subq_III_A_3_c": {
+  "moves": [
+   {
+    "name": "Finset.sum_range_succ rewriting",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 4,
+   "n_scored": 4,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 1,
+   "n_scored": 1,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P10.subq_II_B_1": {
+  "moves": [
+   {
+    "name": "geometric decay |z_n - 1| = |z_0 - 1|/2^n",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 2,
+   "n_scored": 2,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 0,
+   "n_scored": 0,
+   "mean_bidirec": null,
+   "shotgun_rate": null
+  }
+ },
+ "P11.subq_III_5_a": {
+  "moves": [
+   {
+    "name": "Function.Periodic usage",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 7,
+   "n_scored": 7,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 0,
+   "n_scored": 0,
+   "mean_bidirec": null,
+   "shotgun_rate": null
+  }
+ },
+ "P11.subq_II_3_a": {
+  "moves": [
+   {
+    "name": "explicit \u03b1' = 1/(\u03bb-t)\u00b2 via chain rule (named)",
+    "kind": "preserved"
+   },
+   {
+    "name": "HIDDEN: chain rule via convert",
+    "kind": "hidden"
+   },
+   {
+    "name": "sin\u00b2 \u2265 0 used explicitly",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 51,
+   "n_scored": 51,
+   "mean_bidirec": 0.5,
+   "shotgun_rate": 0.725
+  },
+  "kimina": {
+   "n_pass": 0,
+   "n_scored": 0,
+   "mean_bidirec": null,
+   "shotgun_rate": null
+  }
+ },
+ "P11.subq_IV_2_a": {
+  "moves": [
+   {
+    "name": "HasDerivAt.comp (chain rule for u(s+T))",
+    "kind": "preserved"
+   },
+   {
+    "name": "f-periodicity invoked explicitly",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 35,
+   "n_scored": 35,
+   "mean_bidirec": 0.957,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 5,
+   "n_scored": 5,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P11.subq_I_3_b": {
+  "moves": [
+   {
+    "name": "polar coordinates / continuity of theta",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 55,
+   "n_scored": 55,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 59,
+   "n_scored": 59,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P12.subq_I_B_2_a": {
+  "moves": [
+   {
+    "name": "(y + x/2)\u00b2 identity NAMED in script",
+    "kind": "preserved"
+   },
+   {
+    "name": "HIDDEN: shotgun nlinarith with multiple sq_nonneg candidates",
+    "kind": "hidden"
+   }
+  ],
+  "goedel": {
+   "n_pass": 56,
+   "n_scored": 56,
+   "mean_bidirec": 0.75,
+   "shotgun_rate": 0.018
+  },
+  "kimina": {
+   "n_pass": 63,
+   "n_scored": 63,
+   "mean_bidirec": 0.063,
+   "shotgun_rate": 0.857
+  }
+ },
+ "P13.subq_I_1": {
+  "moves": [
+   {
+    "name": "continuity of f_n",
+    "kind": "preserved"
+   },
+   {
+    "name": "strict monotonicity on [0,1]",
+    "kind": "preserved"
+   },
+   {
+    "name": "IVT / intermediate_value",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 3,
+   "n_scored": 3,
+   "mean_bidirec": 0.333,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 2,
+   "n_scored": 2,
+   "mean_bidirec": 0.5,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P15.subq_I_2": {
+  "moves": [
+   {
+    "name": "\u0394 linearity used explicitly",
+    "kind": "preserved"
+   },
+   {
+    "name": "free family / polynomial degree argument",
+    "kind": "preserved"
+   },
+   {
+    "name": "evaluation-at-integers route",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 4,
+   "n_scored": 4,
+   "mean_bidirec": 0.167,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 4,
+   "n_scored": 4,
+   "mean_bidirec": 0.167,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P16.subq_IV_3": {
+  "moves": [
+   {
+    "name": "MVT / accroissements finis bound",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 26,
+   "n_scored": 26,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 16,
+   "n_scored": 16,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P17.subq_II_2": {
+  "moves": [
+   {
+    "name": "induction on sequence index",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 35,
+   "n_scored": 35,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 23,
+   "n_scored": 23,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P17.subq_II_4_a": {
+  "moves": [
+   {
+    "name": "induction on sequence index + bound",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 48,
+   "n_scored": 48,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 7,
+   "n_scored": 7,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P3.subq_P3_I_1_a": {
+  "moves": [
+   {
+    "name": "cos_two_mul (double-angle for cosine)",
+    "kind": "preserved"
+   },
+   {
+    "name": "sin_two_mul (double-angle for sine)",
+    "kind": "preserved"
+   },
+   {
+    "name": "tan = sin/cos identity",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 12,
+   "n_scored": 12,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 6,
+   "n_scored": 6,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P4.subq_P4_III_1": {
+  "moves": [
+   {
+    "name": "d(X) = AX - XA defined explicitly",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 4,
+   "n_scored": 4,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 4,
+   "n_scored": 4,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P6.subq_I_3_a_recurrent": {
+  "moves": [
+   {
+    "name": "characteristic polynomial coefficients (1, -5, 6)",
+    "kind": "preserved"
+   },
+   {
+    "name": "uses fact 2^n + 3^n closed form",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 53,
+   "n_scored": 53,
+   "mean_bidirec": 0.5,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 62,
+   "n_scored": 62,
+   "mean_bidirec": 0.5,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P7.subq_A_2_a": {
+  "moves": [
+   {
+    "name": "block-matrix algebra (corrig\u00e9 route)",
+    "kind": "preserved"
+   },
+   {
+    "name": "DETOUR: case-split via ext + by_cases",
+    "kind": "detour"
+   }
+  ],
+  "goedel": {
+   "n_pass": 54,
+   "n_scored": 54,
+   "mean_bidirec": 0.222,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 2,
+   "n_scored": 2,
+   "mean_bidirec": 0.5,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P8.subq_A_1_a": {
+  "moves": [
+   {
+    "name": "Int.isUnit_iff (\u2208{\u00b11} extraction)",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 12,
+   "n_scored": 12,
+   "mean_bidirec": 0.417,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 2,
+   "n_scored": 2,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P9.subq_22": {
+  "moves": [
+   {
+    "name": "cube representation in \u2124[i\u221a2]",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 0,
+   "n_scored": 0,
+   "mean_bidirec": null,
+   "shotgun_rate": null
+  },
+  "kimina": {
+   "n_pass": 1,
+   "n_scored": 1,
+   "mean_bidirec": 0.0,
+   "shotgun_rate": 0.0
+  }
+ },
+ "P9.subq_4": {
+  "moves": [
+   {
+    "name": "ContinuousAt.div composition",
+    "kind": "preserved"
+   }
+  ],
+  "goedel": {
+   "n_pass": 59,
+   "n_scored": 59,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  },
+  "kimina": {
+   "n_pass": 28,
+   "n_scored": 28,
+   "mean_bidirec": 1.0,
+   "shotgun_rate": 0.0
+  }
+ }
+}
