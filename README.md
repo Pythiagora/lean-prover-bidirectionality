@@ -106,13 +106,29 @@ The `verdicts/{goedel,kimina}.json` files include the candidate Lean code return
 | Item | Value |
 |---|---|
 | Provers | Goedel-Prover-V2-32B (Lin et al. 2025), Kimina-Prover-72B (Moonshot 2025) |
-| Sampling | K = 64, max_tokens = 32,000 (matched to each model's published evaluation protocol) |
+| Sampling | K = 64, max_tokens = 32,000 (matched to each model's published evaluation protocol); Goedel T=1.0, top_p=0.95; Kimina T=0.6, top_p=0.95; vLLM seed unset; per-attempt timeouts 900s inference / 90s verification |
 | Verification | `lake env lean` against Mathlib v4.30.0-rc2 |
 | Corpus | 20 focal theorems from agrégation interne 2005–2013 (Mercier and Rombaldi 2013, ISBN 978-2-342-00940-8); 7 algebra, 13 analysis; balanced across saturated, sweet-spot, low-PASS, and 0/8-baseline difficulty bands |
 | Contamination control | Verified absent from Numina, Lean-Workbook, miniF2F, PutnamBench, ProofNet, AOPS by source enumeration; print-only French academic publication |
 | Total samples | 2,510 lake-verified attempts (1,280 Goedel + 1,230 Kimina); 805 PASS attempts (520 + 285) |
 | Aggregate pass rate | Goedel 40.6%, Kimina 23.2% |
-| Move detection | Regex patterns derived from the Mercier-Rombaldi corrigé text per theorem (see `analysis/corrige_moves.py`); spot-validated by manual inspection on 10 P12 PASSes |
+| Move detection | Regex patterns derived from the Mercier-Rombaldi corrigé text per theorem (see `analysis/corrige_moves.py`); audited on 10 random P12 PASSes (5 Goedel + 5 Kimina) covering all four strategy classes |
+
+## Corpus selection
+
+The 20 focal theorems were chosen pre-experiment from 412 audited sub-questions of agrégation interne 2005–2013 by the following protocol:
+
+1. **Audit step.** Each of the 412 sub-questions was reviewed against the Mercier-Rombaldi corrigé and tagged with: subject (algebra / analysis), difficulty (estimated lines of corrigé), self-containedness (1 = no dependencies on prior sub-questions of the same problem; 0 = uses prior items), Lean-formalisability (some agrégation problems involve drawings, board games, or French-prose-only setups not formalisable in Mathlib).
+2. **Pilot pass-rate stratification.** A K=8 pilot run on Goedel-V2-32B over a candidate set of ~80 self-contained Lean-formalisable sub-questions produced four difficulty bands:
+   - **Saturated** (8/8 PASS): 5 theorems sampled — tests whether the bidirectionality metric distinguishes provers on cases both close.
+   - **Sweet-spot** (1–7/8 PASS): 5 theorems — the regime where most data lives.
+   - **Low-PASS** (1/8 PASS): 5 theorems — partially-solved, with enough data to score one or two attempts.
+   - **0/8-baseline** (0/8 PASS): 5 theorems — failure-mode analysis, K=64 designed to give one or two PASSes if any.
+3. **Topic balance.** Within each band, selection enforced a 7-algebra / 13-analysis split tracking the overall corpus distribution.
+4. **Output blinding.** **Model outputs were not inspected during selection.** The K=8 pilot produced binary PASS counts per theorem; selection used those counts and the pre-hoc audit tags only. The chain-of-thought, generated Lean scripts, and verdicts were sealed until the K=64 main run completed.
+5. **Final list.** The 20 chosen theorem IDs are in `corpus/theorems_focal20.jsonl`. Per-theorem band assignments, abstraction levels, and K=64 PASS counts are summarised in `corpus/selection_summary.md`. The full 412-row audit table and the K=8 pilot binary PASS counts are not included in this release (they reference identifiers tied to the Mercier-Rombaldi numbering and are kept separate from the public-corpus release for that reason).
+
+Abstraction-level annotation (concrete / standard / abstract, see §3 F2 of the abstract) was applied to the 20 theorems **before** the K=64 PASS data was inspected. Strategy-class definitions for the P12 deep-dive (S1–S5 in §3 F1) are post-hoc — they emerged from inspecting the 119 P12 PASSes and were defined to be kernel-equivalent partition cells over the observed scripts.
 
 ## Citation
 
