@@ -6,7 +6,7 @@
 \usepackage{listings}
 
 \title{Bidirectionality vs.\ the Corrig\'e: \\
-A Per-PASS, Per-Attempt, and Human-Baseline Audit of Two SOTA Lean Provers}
+A Per-PASS, Per-Attempt, and Myers-Transcription Audit of Two SOTA Lean Provers}
 
 \author{David Appadourai}
 \institute{Universit\`a di Roma Tor Vergata, Italy \and IHPST, France}
@@ -27,7 +27,7 @@ Corpus: agr\'egation interne 2005--2013~\cite{mercier-rombaldi}, a French print-
 
 \section{Findings}
 
-The bidirectional gap is signed, quantitative, and concentrated. \emph{First,} per-PASS classification of all 805 verified scripts yields Kimina 147 (a) / 137 (b) / 1 (c) and Goedel 102 (a) / 418 (b) / 0 (c). Kimina preserves the corrig\'e route at 51.6\% per PASS, Goedel at 19.6\%, despite Goedel's 1.83$\times$ higher PASS rate (520 vs.\ 285). The gap concentrates in seven theorems where Kimina's \texttt{<think>} decoder names the corrig\'e move and Goedel's closure-RL absorbs it into shotgun.
+The bidirectional gap is signed, quantitative, and concentrated. \emph{First,} per-PASS classification of all 805 verified scripts yields Kimina 147 (a) / 137 (b) / 1 (c) and Goedel 102 (a) / 418 (b) / 0 (c). Kimina preserves the corrig\'e route at 51.6\% per PASS, Goedel at 19.6\%, despite Goedel's 1.83$\times$ higher PASS rate (520 vs.\ 285). The gap concentrates in seven theorems where Kimina's outputs name the corrig\'e move explicitly and Goedel's outputs absorb it into a closing automation chain.
 
 \emph{Second,} per-attempt aggregates expose a paradigm signature invisible at the PASS layer. Goedel-RL always commits to a Lean script (1280 attempts, 1280 with a \texttt{lean4} block, 0 truncations to no-block). Kimina-SFT does not: 159 of 1280 attempts (12.4\%) emit no usable script --- 50 are 0-character outputs, 110 have unclosed \texttt{<think>} tags overrunning the 32K budget. Goedel-V2-32B commits to a script in 1280/1280 attempts. Kimina-72B commits in 1121/1280. Whether the locus is training paradigm, scale (32B vs.\ 72B), or \texttt{<think>}-decoder is left for ablation.
 
@@ -35,7 +35,7 @@ The bidirectional gap is signed, quantitative, and concentrated. \emph{First,} p
 
 \section{The two ceilings}
 
-Two theorems produce 0 PASSes in 128 attempts each: P11.subq\_III\_1 ($g$ differentiable on $]p,q[$ with $|g'| \leq M \Rightarrow g$ has a finite limit at $q^-$; two-line corrig\'e via MVT + Cauchy criterion) and P9.subq\_22 (winding number invariance under reparameterisation). The single Kimina PASS originally listed for P9.subq\_22 is a Lake false-positive: the script body terminates at \texttt{:= by} with no closing tactic, accepted by the batch verifier but rejected by interactive lean-lsp.
+Two theorems produce 0 PASSes in 128 attempts each: P11.subq\_III\_1 ($g$ differentiable on $]p,q[$ with $|g'| \leq M \Rightarrow g$ has a finite limit at $q^-$; two-line corrig\'e via MVT + Cauchy criterion) and P9.subq\_22 (winding number invariance under reparameterisation). The single Kimina PASS originally listed for P9.subq\_22 is a Lake false-positive: the script body terminates at \texttt{:= by} with no closing tactic. \texttt{lake env lean} in batch mode accepts the malformed proof, while an interactive lean-lsp re-check on the same Mathlib v4.30.0-rc2 environment rejects it. The two false-positives reported below are pipeline-level artifacts of this kind, not Lean kernel false-positives.
 
 To localise the failures, a Claude Opus 4.7 + lean-lsp-mcp transcription was produced in the Myers role (faithful transcription of corrig\'e moves into named operations) for all 20 theorems, with proof-state inspection, multi-tactic probing, and Mathlib API search through interactive lean-lsp. Of 20 baseline scripts, 19 reach (a) on first or second iteration. P11.subq\_III\_1 closes in one iteration via \texttt{Convex.lipschitzOnWith\_of\_nnnorm\_hasDerivWithin\_le} (MVT) and \texttt{cauchy\_map\_iff\_exists\_tendsto} (Cauchy criterion). The Mathlib API is complete. The failure is premise-selection. P9.subq\_22 also bounces the baseline, but with a structured diagnosis: the Lean statement does not fix $\varphi(0) = 0$ (the corrig\'e silently does), and the period-shift invariance of the rotation index (Q21 of the original problem) is absent from Mathlib v4.30.0-rc2. \emph{In short,} the first ceiling is provers' weakness, the second a content gap. \emph{In effect,} the Claude+lean-lsp-mcp Myers transcription functions as a diagnostic instrument that ML timeout cannot.
 
