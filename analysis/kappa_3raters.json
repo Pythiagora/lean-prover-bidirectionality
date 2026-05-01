@@ -1,0 +1,276 @@
+{
+  "n": 52,
+  "n_excl_p16": 37,
+  "kappa": {
+    "sonnet_gemini": 0.813953488372093,
+    "sonnet_gpt": 0.813953488372093,
+    "gemini_gpt": 1.0,
+    "sonnet_vs_majority3": 0.813953488372093,
+    "sonnet_vs_council2": 0.813953488372093,
+    "fleiss_3raters": 0.8715785140975508,
+    "sonnet_vs_majority3_excl_p16": 1.0
+  },
+  "cost_usd": 0.94204,
+  "labels": {
+    "P12.subq_I_B_2_a/kimina_att11.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att35.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att46.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/kimina_att09.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att60.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att52.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att30.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att43.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/kimina_att59.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att18.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P8.subq_A_1_a/goedel_att38.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P8.subq_A_1_a/goedel_att08.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P10.subq_III_A_3_c/kimina_att25.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att09.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P11.subq_III_5_a/goedel_att22.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att45.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P12.subq_I_B_2_a/kimina_att40.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P12.subq_I_B_2_a/kimina_att06.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P11.subq_III_5_a/goedel_att10.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att50.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P11.subq_III_5_a/goedel_att27.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/kimina_att38.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P8.subq_A_1_a/kimina_att59.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P12.subq_I_B_2_a/kimina_att01.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P11.subq_III_5_a/goedel_att37.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att00.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P11.subq_III_5_a/goedel_att49.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att22.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att02.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P16.subq_IV_3/kimina_att58.md": {
+      "sonnet": "b",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att24.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att09.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att31.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P17.subq_II_4_a/kimina_att21.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att52.md": {
+      "sonnet": "b",
+      "gemini": "b",
+      "gpt": "b"
+    },
+    "P16.subq_IV_3/goedel_att47.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att48.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att03.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att06.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att43.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att06.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att01.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att55.md": {
+      "sonnet": "b",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att07.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att30.md": {
+      "sonnet": "b",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/goedel_att16.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att12.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/goedel_att38.md": {
+      "sonnet": "b",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P12.subq_I_B_2_a/kimina_att32.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att26.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P16.subq_IV_3/kimina_att33.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    },
+    "P8.subq_A_1_a/goedel_att42.md": {
+      "sonnet": "a",
+      "gemini": "a",
+      "gpt": "a"
+    }
+  }
+}
