@@ -27,7 +27,7 @@ Per-PASS classification: **(a)** route-preserving, **(b)** route-equivalent at l
 | Goedel-V2-32B | 520 | 102 | 418 | 0 | **19.6%** |
 | Kimina-72B | 285 | 147 | 137 | 1 | **51.6%** |
 
-Kimina preserves the official solution route at 2.6× Goedel's rate, despite Goedel's 1.83× higher PASS rate.
+Kimina preserves the official solution route at 2.6× Goedel's rate, despite Goedel's 1.82× higher PASS rate.
 
 **Paradigm signature, per-attempt:**
 
@@ -88,7 +88,7 @@ The arm-quality ranking inverts on this theorem: Goedel inscribes the algebraic 
 
 The `solution_transcription/` directory contains a Lean 4 script for each of the 20 theorems, written in the role of an expert transcriber following the WDWFT framework: faithful transcription of official solution moves into named operations, no shotgun automation, no `<;>` cascades. Each script was drafted by Claude Opus 4.7 against an interactive Lean LSP server (`lean-lsp-mcp`), with proof-state inspection (`lean_goal`), multi-tactic probing (`lean_multi_attempt`), and Mathlib API search (`lean_leansearch`, `lean_loogle`).
 
-Of 20 baseline scripts, 19 reach (a) classification on first or second iteration. The exception is P9.subq_22 (winding number ceiling), which is documented in `P9_subq_22.md` with the structured failure diagnosis. All passing scripts are kernel-verified by `lean_diagnostic_messages` (0 errors, 0 warnings) and use only standard Mathlib axioms (`propext`, `Classical.choice`, `Quot.sound` — no `sorryAx`, no `native_decide`).
+Of 20 baseline scripts, 19 reach (a) classification within four iterations (mean 1.3, median 1). The exception is P9.subq_22 (winding number ceiling), which is documented in `P9_subq_22.md` with the structured failure diagnosis. All passing scripts are kernel-verified by `lean_diagnostic_messages` (0 errors, 0 warnings) and use only standard Mathlib axioms (`propext`, `Classical.choice`, `Quot.sound` — no `sorryAx`, no `native_decide`).
 
 The baseline serves three purposes: (i) calibration of the (a) upper bound for each theorem, (ii) per-theorem comparison anchor against the ML PASSes, (iii) diagnostic instrument for ceiling cases (where ML provers timeout, the transcription either closes the proof or identifies the precise blocker).
 
@@ -187,7 +187,7 @@ Appadourai, D. (in submission). *Why Do We Formalize Theorems? Informal Proof, T
 ## Limitations
 
 - **Single-corpus.** Bidirectionality scores are computed relative to the agrégation interne official solutions, which follow a specific French pedagogical style. The metric is corpus-relative; whether the patterns generalise to other informal proof traditions is open.
-- **Single-seed main run.** All PASSes from one run per prover at a single temperature. On a Goedel 3-theorem stratified subset (concrete, standard, abstract), two secondary vLLM seeds (12345, 67890) reproduce per-PASS route rates within ≤ 3.2 pp (P12: 75/76/73%, P11.I.3.b: 0/0/0%, P7: 0/0/0%). Kernel-PASS rates vary by 9–14 pp. The bidirectional ratio is seed-stable on this subset. Full multi-seed coverage and Kimina re-seeding deferred.
+- **Single-seed main run.** All PASSes from one run per prover at a single temperature. On a Goedel 3-theorem stratified subset (concrete, standard, abstract), two secondary vLLM seeds (12345, 67890) reproduce a regex proxy for the per-PASS hand-classification within ≤ 3.2 pp (P12: 75/76/73%, P11.I.3.b: 0/0/0%, P7: 0/0/0%). Kernel-PASS rates vary by 9–14 pp. The Goedel route proxy is seed-stable on this subset; the hand-classification and the Kimina arm were not re-seeded. Full multi-seed coverage and Kimina re-seeding deferred.
 - **Per-PASS classification is sub-agent-mediated, but inter-rater agreement is high across model lineages.** The (a)/(b)/(c) call for each PASS was made by a Sonnet sub-agent calibrated on representative samples. A 3-rater protocol (Sonnet original, Gemini 3.1 Pro, GPT-5.5) on the 78 INDEX-enumerated PASSes achieves Fleiss' κ = 0.87 across 52 valid triples. Pairwise: Sonnet–Gemini κ = 0.81, Sonnet–GPT-5.5 κ = 0.81, Gemini–GPT-5.5 κ = 1.00. Excluding P16.subq_IV_3 (slope/multiplicative bound, n=37), all three raters agree on every PASS — the framework is unanimous across model lineages on every theorem except one with a genuinely fuzzy (a)/(b) boundary. Pipeline and raw verdicts: `analysis/kappa_3raters.{py,json}`.
 - **transcription baseline is Claude-mediated, not pure-human.** The baseline scripts were written by Claude Opus 4.7 with interactive lean-lsp access and an explicit transcription-role prompt (faithful transcription, no shortcut). Comparison to genuinely human-written Mathlib tactic scripts (transcription-style by hand) remains future work.
 - **Lake false-positive lower bound.** The transcription audit surfaced two PASSes the batch verifier accepted but that fail under interactive lean-lsp checking. The rerun4 false-positive rate is bounded below by 2/805. Audit of the remaining cleanest PASSes is in progress.

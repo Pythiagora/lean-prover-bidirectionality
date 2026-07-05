@@ -31,4 +31,4 @@ Per-theorem mapping of the 20 focal theorems to corrigé abstraction level (anno
 
 **Abstraction-level annotation** was applied pre-K64 based on the corrigé-route abstraction. See `analysis/abstraction_level_verify.py` for the route patterns (`route_pattern`) and lower-level detour patterns (`lower_level_pattern`) per theorem.
 
-**K=64 PASS rate sanity check.** Aggregate Goedel = 520 / 1280 = 40.6%; Kimina = 285 / 1230 = 23.2%. (Kimina has 1230 attempts because 50 attempts errored or timed-out at the network layer and were not retried within the 9h wall-clock budget.)
+**K=64 PASS rate sanity check.** Aggregate Goedel = 520 / 1280 = 40.6%; Kimina = 285 / 1230 = 23.2%. (Kimina has 1230 completed attempts. On P11.subq_III_1 the first 14 attempts each ran 27–55 min, so the remaining 50 were deliberately skipped — `reason: user_skipped` in `verdicts/kimina.json` — rather than exhaust the 9h budget for the other 19 theorems. No PASS is affected: P11.subq_III_1 is 0-PASS on both arms.)

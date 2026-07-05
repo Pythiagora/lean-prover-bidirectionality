@@ -11,7 +11,7 @@ Produced 2026-04-30 from per-theorem INDEX.md files (sub-agent classified PASSes
 | Goedel | 520 | 102 | 418 | 0 | **19.6%** |
 | Kimina | 285 | 147 | 137 | 1 | **51.6%** |
 
-**Kimina is structurally bidirectional at 2.6× Goedel's rate (per-PASS-conditioned), despite Goedel's 1.83× higher PASS rate.**
+**Kimina is structurally bidirectional at 2.6× Goedel's rate (per-PASS-conditioned), despite Goedel's 1.82× higher PASS rate.**
 
 ## 2. Per-attempt extension (1,280 attempts per arm, hard-data aggregates)
 
@@ -34,7 +34,7 @@ Two arm-paradigm-level findings emerge that v6 only asserted anecdotally for P11
 - Goedel 520/1280 = 40.6%
 - Kimina 285/1280 = 22.3%
 
-The PASS-rate gap (1.83×) is smaller than the per-PASS bidirectionality gap (2.6×), so weighting by the unconditional rate gives:
+The PASS-rate gap (1.82×) is smaller than the per-PASS bidirectionality gap (2.6×), so weighting by the unconditional rate gives:
 
 **Per-attempt (a)-route rate (Goedel) = 102/1280 = 7.97%**
 **Per-attempt (a)-route rate (Kimina) = 147/1280 = 11.5%**
